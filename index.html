@@ -8,8 +8,8 @@
     <meta name="description" content="متجر كودستان لجميع خدمات الدعم الرقمي، شحن العملات، زيادة المتابعين، بطاقات الإنترنت، والمزيد. حلول رقمية متكاملة في مكان واحد." />
 
     <!-- PWA and Favicon -->
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./icon-192x192.png" />
     <meta name="theme-color" content="#24243e" />
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -92,16 +92,15 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div class="fixed inset-0 bg-animated-gradient -z-10"></div>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+          navigator.serviceWorker.register('./service-worker.js').then(registration => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, err => {
             console.log('ServiceWorker registration failed: ', err);
